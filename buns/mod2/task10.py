@@ -1,9 +1,8 @@
-words = "кот гири док"
+words = input() + ' '
+word = ''
 
-new_word = ''
-for word in words:
-    if word == ' ':
-        continue
-    new_word += word[-1]
+for i in range(len(words)):
+    if words[i] == ' ':
+        word += words[i-1]
 
-print(new_word)
+print(word)
