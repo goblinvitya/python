@@ -1,15 +1,13 @@
-def check_duplicate_digits(sequence):
-    digits = set()
-    for num in sequence:
-        for digit in str(num):
-            if digit in digits:
-                return True
-            digits.add(digit)
-    return False
+a = input()
+b = False
 
+while 1:
+    for i in range(0, len(a)):
+        for j in range(0, len(a)):
+            if i!=j:
+                if a[i] == a[j] and a[i] != " ":
+                    b = True
+                    break
+    break
 
-sequence = input.split()
-sequence = [int(num) for num in sequence]
-
-result = check_duplicate_digits(sequence)
-print(result)
+print(s)
